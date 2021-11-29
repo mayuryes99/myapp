@@ -29,8 +29,7 @@ pipeline{
                                 docker build -t 52.146.144.231:8083/myapp:${VERSION} .
                                 docker login -u admin -p $docker_password 52.146.144.231:8083 
                                 docker push  52.146.144.231/myapp:${VERSION}
-                                docker rmi 52.146.144.231/myapp:${VERSION}
-                                '''
+                             '''
                     }
                 }
             }
